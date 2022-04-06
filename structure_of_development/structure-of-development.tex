@@ -148,14 +148,14 @@ arrival and curation of big data from the deployment of mobile technologies.
 We conducted two studies using these datasets. Study 1 used a series
 of item response models with different numbers of factors to describe
 the structure of between-child developmental variation in the survey
-data. As evidence for multidimensionality, we found that models with
-more factors performed better according to out-of-sample accuracy. And,
-consistent with the differentiation hypothesis, models with more factors
-provided more complete descriptions of the differences among older
-children.
-
+data.
+% As evidence for multidimensionality, we found that models with
+% more factors performed better according to out-of-sample accuracy. And,
+% consistent with the differentiation hypothesis, models with more factors
+% provided more complete descriptions of the differences among older
+% children.
 At its core, the differentiation hypothesis is a theory about how
-individual children develop. In particular, the differentiation
+individual children develop, however. In particular, the differentiation
 hypothesis posits that within-child covariation between underlying ability
 factors will be high very early in life and decrease as children age.
 Between-child differences, like those examined in Study 1, are often
@@ -170,23 +170,28 @@ developmental factors changes \emph{within-person} over time.
 % serves as a broad indicator of linguistic achieve -- we model both how
 % children develop over time and how the coupling between gains on each of
 % the two factors changes with age. Here,
-We find strong evidence for the
-within-person differentiation hypothesis, with the high early
-covariation between the two factors systematically decreasing across
-early childhood.
+% We find strong evidence for the
+% within-person differentiation hypothesis, with the high early
+% covariation between the two factors systematically decreasing across
+% early childhood.
 
-Taking the two studies together, our work makes three contributions.
-First, we describe the between-child multidimensional structure of
-developmental variation in early child. Second, we find that the
-dimensionality of this variation increases with age (i.e., between-person evidence for the differentiation hypothesis). Third, we find that
-within-child covariation between factors decreases during a child's
-first year (i.e., within-person evidence for the differentiation hypothesis).
 
+\section{Open Practices}
+
+All data and code necessary to reproduce our results are publicly available at \url{https://osf.io/5426p/?view_only=12520097ba674ab1923b9f0738e37354}.\footnote{We also include in this repository a preregistration of followup analysis of a different dataset. We report on these data in our Supplemental Information and explain why we eventually deemed the dataset unsuitable for our analysis.}
+
+% . We deviated from this preregistration for two reasons. First, we had not planned to use longitudinal data reported in Study 2 but came to appreciate the importance of these data for examination of differentiation as a within-person phenomenon. Second, we had failed to appreciate the degree to which lack of milestone
+% overlap across ages (i.e., planned missingness for older children to
+% younger milestones and vice versa) jeopardized our ability to make valid cross-age
+% comparisons. }
+%
 \section{Study 1}
 
-As children develop, they achieve -- and sometimes move through -- many milestones,
-including shaking objects, crawling, pointing, taking turns, and drawing
-shapes. While developing and norming a set of web- and smartphone-based
+% As children develop, they achieve -- and sometimes move through -- many milestones,
+% including shaking objects, crawling, pointing, taking turns, and drawing
+% shapes.
+
+While developing and norming a set of web- and smartphone-based
 parenting applications, Kinedu, Inc. obtained data on whether many
 children of different ages had achieved a wide variety of developmental milestones. In Study 1, we use these data to assess the latent dimensionality of developmental variation and provide a first test of the differentiation hypothesis.
 
@@ -211,10 +216,7 @@ children having achieved about 50 of the developmental milestones by age 1 month
 
 \subsubsection{Data Analysis}
 
-Our examination of the dimensionality of children's achievement of developmental milestones  and the differentiation hypothesis uses an exploratory, iterative model building approach. All data and code necessary to reproduce our results are publicly available at https://osf.io/5426p/?view_only=12520097ba674ab1923b9f0738e37354.\footnote{We also include in this repository a preregistration of followup analysis of a different dataset. We deviated from this preregistration for two reasons. First, we had not planned to use longitudinal data reported in Study 2 but came to appreciate the importance of these data for examination of differentiation as a within-person phenomenon. Second, we had failed to appreciate the degree to which lack of milestone
-overlap across ages (i.e., planned missingness for older children to
-younger milestones and vice versa) jeopardized our ability to make valid cross-age
-comparisons. In our Supplemental Information, we report on the original dataset and explain in more depth why we eventually deemed it unsuitable.}
+Our examination of the dimensionality of children's achievement of developmental milestones  and the differentiation hypothesis uses an exploratory, iterative model building approach.
 
 \paragraph{Item response models}
 
@@ -251,7 +253,7 @@ First, we examined each model's \emph{performance} by calculating gain for four 
 % with the top panel corresponding to the first and the bottom panel
 % corresponding to the second.
 
-\subsection{Results and Discussion}
+\subsection{Results}
 
 \begin{figure}
 \centering
@@ -334,25 +336,29 @@ older age groups.
 
 \section{Study 2}
 
-
-The results from Study 1 suggest that children's development is multidimensional and provide compelling support for the differentiation hypothesis. However, drawing inferences about within-child, developmental processes from cross-sectional, between-child data risks committing a version of the ecological fallacy - and cautions against making individual-level claims from analysis of group-level data \parencite{piantadosi1988}. Here, the risk is that patterns observed in the differences between children are not necessarily indicative of the patterns that manifest within-children across time. Additionally robust assessment of the differentiation hypothesis requires analysis of longitudinal data.
-
+%
+% The results from Study 1 suggest that children's development is multidimensional and provide compelling support for the differentiation hypothesis.
+Drawing inferences about within-child, developmental processes from cross-sectional, between-child data runs the risk of committing a version of the ecological fallacy \parencite{piantadosi1988}. Here, the risk is that patterns observed in the differences between children are not necessarily indicative of the patterns that manifest within-children across time.
+% Additionally robust assessment of the differentiation hypothesis requires analysis of longitudinal data.
 The differentiation hypothesis suggests that the structure of children's
-abilities expands with age. That is, the extent to which underlying abilities are ``coupled'' should decrease with age. Prior to differentiation age-specific deviations from a child's developmental trajectory in one underlying ability should be tightly coupled to to age-specific deviations in other underlying abilities. For example, when a child surges ahead on motor ability in a particular month, they will also surge ahead on linguistic ability. If there is differentiation , the extent of coupling should decrease with age, such that surges in motor ability will be less or not at all coupled with changes in linguistic ability. To test this hypothesis, we adapt methods developed in
-examination of dedifferentiation of cognitive abilities in old age \parencite{hulur2015}
-to analysis of factor scores obtained from multidimensional item
-response models of the milestone data obtained on up to 21 occasions as
-children moved through early childhood.
+abilities expands with age. That is, the extent to which underlying abilities are ``coupled'' should decrease with age.
 
-As detailed below, we use multilevel model models of change to examine if and how age moderates
-the extent of within-person coupling in the occasion-to-occasion changes
-in factors underlying milestone achievement (estimated using item
-response models), after controlling for individuals' general
-developmental gains. Our expectation is that, separate from the
-long-term developmental trends, within-person variations on 2 underlying
-ability factors will be tightly coupled (i.e., dedifferentiated) at
-earlier ages and that the extent of coupling will decrease towards zero
-as children get older and the underlying factors differentiate.
+Prior to differentiation, age-specific deviations from a child's developmental trajectory in one underlying ability should be tightly coupled to to age-specific deviations in other underlying abilities. For example, when a child surges ahead on motor ability in a particular month, they will also surge ahead on linguistic ability. If there is differentiation, the extent of coupling should decrease with age, such that surges in motor ability will be less or not at all coupled with changes in linguistic ability. To test this hypothesis in Study 2, we use data from the Kinedu mobile app, taking advantage of parents' longitudinal reporting of milestone data.
+% we adapt methods developed in
+% examination of dedifferentiation of cognitive abilities in old age \parencite{hulur2015}
+% to analysis of factor scores obtained from multidimensional item
+% response models. Our dataseti of the milestone data obtained on up to 21 occasions as
+% children moved through early childhood.
+%
+% As detailed below, we use multilevel model models of change to examine if and how age moderates
+% the extent of within-person coupling in the occasion-to-occasion changes
+% in factors underlying milestone achievement (estimated using item
+% response models), after controlling for individuals' general
+% developmental gains. Our expectation is that, separate from the
+% long-term developmental trends, within-person variations on 2 underlying
+% ability factors will be tightly coupled (i.e., dedifferentiated) at
+% earlier ages and that the extent of coupling will decrease towards zero
+% as children get older and the underlying factors differentiate.
 
 
 % Computing coupling of this type involves five distinct steps (Figure
@@ -389,8 +395,8 @@ as children get older and the underlying factors differentiate.
 
 \subsubsection{App Data}
 
-Longitudinal data were sourced from Kinedu, Inc.'s mobile application. As part of using the app, parents of children in the United States, Mexico, and Brazil were asked to
-respond to 20-50 milestones about their child every few months. As with
+Longitudinal data were sourced from Kinedu, Inc.'s mobile application. As part of using the app, parents of children were asked to
+respond to 20-50 milestones about their child every few months. Country of residence for parents was unknown but the vast majority of users came from the United States, Mexico, and Brazil. As with
 many mobile apps, usage is non-uniform, such that many users use the app
 once or only occasionally, while a smaller number of users use the app frequently.
 
@@ -555,7 +561,7 @@ incomplete data treated as usual under missing at random assumptions
 \parencite{bates2005}.
 
 
-\subsection{Results and Discussion}
+\subsection{Results}
 
 
 \begin{figure}[t!]
@@ -578,7 +584,8 @@ from factor 1's developmental pathway on deviations from factor 2's
 developmental path. These results are depicted in Figure
 \ref{fig:study2results}.
 
-This finding gives strong evidence that, within individual children, local deviations from the child's own developmental growth trajectory begin quite coupled but appear to decouple by around 18 months. Put another way, when a young baby grows especially quickly or slowly they tend to do so on both relevant dimensions (at least within our milestone set).\footnote{Although models with more factors show the same differentiation effect (see Supplemental Information), the finding is easiest to conceptualize in a two-factor space.} In contrast, a toddler's language can surge forward (or hang back) without coordinated changes in motor development. Parallel to the cross-sectional evidence obtained in Study 1, teh resutls from Study 2 provide evidence for the differentiation hypothesis, as a within-person process that manifests in longitudinal data.
+This finding gives strong evidence that, within individual children, local deviations from the child's own developmental growth trajectory begin quite coupled but appear to decouple by around 18 months. Put another way, when a young baby grows especially quickly or slowly they tend to do so on both relevant dimensions (at least within our milestone set).\footnote{Although models with more factors show the same differentiation effect (see Supplemental Information), the finding is easiest to conceptualize in a two-factor space.} In contrast, a toddler's language can surge forward (or hang back) without coordinated changes in motor development.
+% Parallel to the cross-sectional evidence obtained in Study 1, the results from Study 2 provide evidence for the differentiation hypothesis, as a within-person process that manifests in longitudinal data.
 
 \begin{figure}
 \centering
@@ -587,7 +594,7 @@ This finding gives strong evidence that, within individual children, local devia
 \label{fig:study2results}
 \end{figure}
 
-\section{General Discussion}\label{discussion}
+\section{General Discussion}
 
 Is early child development a single uniﬁed process or a host of different
 processes? Stage theories assume synchronization in developmental
@@ -595,10 +602,19 @@ changes across distinct domains like language, social-emotional
 development, and cognition \parencite{flavell1963}. In contrast, more modern modular theories
 tend to assume that particular aspects of development proceed ``on their
 own schedule'' \parencite{spelke1992,sheldrick2019}. Here, inspired by psychometric studies of
-age-related changes in cognition, we explored this issue through the lens of individual variation. Our premise was that
-understanding the nature of variation in developmental milestones could help shed
-light on whether children's developmental change covaries across domains
-within a single factor and whether developmental variation splits into multiple factors as children grow older.
+age-related changes in cognition, we explored this issue through the lens of individual variation.
+
+
+Our work makes three contributions.
+First, we describe the between-child multidimensional structure of
+developmental variation in early child. Second, we find that the
+dimensionality of this variation increases with age, constituting between-person evidence for the differentiation hypothesis. Third, we find that
+within-child covariation between factors decreases during a child's
+first year, constituting within-person evidence for the differentiation hypothesis.
+% Our premise was that
+% understanding the nature of variation in developmental milestones could help shed
+% light on whether children's developmental change covaries across domains
+% within a single factor and whether developmental variation splits into multiple factors as children grow older.
 
 With the emergence of data science techniques, our use of newly
 available data is a specific instance of a general pattern: Larger data
@@ -610,30 +626,31 @@ Our contributions came from leveraging data made newly available
 due to parents' use of a mobile app. Parents, who were looking to understand and
 support their child's development, answered hundreds of binary milestone
 questions about their child. As a result, we were able to explore and
-test the differentiation hypothesis from birth through early childhood by fitting a
-variety of psychometric models to this data.
+test the differentiation hypothesis from birth through early childhood.
+ % by fitting a
+% variety of psychometric models to this data.
 
 % What are the developmental factors that these models identified?
-We modeled the structure of age-related variation between children and identified data-driven dimensions in this variation. These appeared to map to some extent onto classic domains of development, for example by loading more heavily on motor or language milestones.
-It is important to remember, however, that by nature of our analyses, our results describe differences rather than commonalities between individuals. Because we leverage individual variability, our models are not designed to detect the operation of mechanisms that are consistent across individuals. Despite the variation we observed and quantified,
-many common mechanisms (from statistical learning to motor skill learning) likely support developmental change across all individuals. The individual differences in milestones that we observe then might be differences in learning rates across individuals.
+The dimensions of variation in development that we identified appeared to map to some extent onto classic domains of development, for example by loading more heavily on motor or language milestones.
+It is important to remember, however, that by nature of our analyses, our results describe differences rather than commonalities between individuals. Because we leverage individual variability, our models are not designed to detect the operation of mechanisms that are consistent across individuals. Despite the variation we observed and quantified, many common mechanisms (from statistical learning to motor skill learning) likely support developmental change across all individuals. The individual differences in milestones that we observe then might be differences in learning rates across individuals.
 
 One major axis of differentiation was between motor and linguistic milestones. While these two aspects of development were tightly coupled initially, they appeared to decouple over the first year and a half. This observation is interesting from the perspective of prior theories about the relationship between language and motor development. For example, \cite{iverson2010} argues for two routes of influence. First, early linguistic skills like babbling are motoric in nature and hence may be influenced by the same kinds of experiences (as well as following the same maturational timetable). This route is supported in our data. Second, motor development opens up new opportunities for learning, for example, by allowing children to locomote to new objects and bring them back to their parents. While this observation is supported in some more detailed studies \parencite[e.g.,][]{walle2014,karasik2014}, it was not borne out in the broad developmental view afforded by our data.
 
 Our work has several limitations that should inform future work. First,
-we relied on parent report, which can have signiﬁcant biases and
+we relied on parent report, which can have significant biases and
 limitations, especially in its precision regarding capacities that are
 difﬁcult to observe \parencite[e.g., cognitive abilities;][]{frank2021,feldman2000}. Second, our
-data come from very speciﬁc populations (Study 1: middle- and
+data come from very specific populations (Study 1: middle- and
 upper-class Mexican parents whose children were in group care; Study 2:
 an unknown but largely Brazil, US, and Mexico-based group of users of a developmental mobile application) and hence
 caution is warranted in generalizing to specific populations. Third, our results are with regard to child development
-as deﬁned by the Kinedu app milestone set. These milestones provide a global picture of observable developmental changes, but they do not necessarily carve development at its joints. Further, the factor discovery methods we use reflect the statistical structure of the observed data rather than the structure of any latent variables internal to the child \parencite{bork2017,maraun2003,van-der-maas2006}.
+as deﬁned by the Kinedu app milestone set. These milestones provide a global picture of observable developmental changes, but they do not necessarily carve development at its joints.
+% Further, the factor discovery methods we use reflect the statistical structure of the observed data rather than the structure of any latent variables internal to the child \parencite{bork2017,maraun2003,van-der-maas2006}.
 
 This study illustrates how
 large datasets can be leveraged to better understand child development. By
 combining multiple data sources and developing novel methods we
-were able to engage new exploration and testing of long-standing theories of child development. We found evidence that children's development is better characterized as multidimensional than as unidimensional, and evidence in support of both the between-person and within-person versions of the
+were able to engage new exploration and testing of long-standing theories of child development. We found evidence that children's development is better characterized as multidimensional than as unidimensional, and evidence in support of both between- and within-person versions of the
 developmental differentiation hypothesis. Our hope is
 that this work encourages others to continue to advance developmental
 theory by taking advantage of opportunities provided by new,
